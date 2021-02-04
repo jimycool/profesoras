@@ -5,10 +5,12 @@
 }
 
 .logo{
+  background-color: #d06314;
+
   float: left;
   margin-left: 0px;
   display: block;
-  width:7%;
+  width:6.6%;
 }
 
 
@@ -26,9 +28,57 @@
   color: black;
 }
 
-.topnav a.active {
+.topnav a:active {
   background-color: #4CAF50;
   color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+#profesoras #topnav a.profesoras{
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+
 }
 
 h1 {
@@ -44,23 +94,24 @@ h2 {
 
 }
 
+.about-container{
+  position: relative;
+}
+
 .profesoras-image{
-  vertical-align: middle;
-  margin-left: 0;
-  margin-right: auto;
-  margin-top: 50px;
+  margin:auto;
   display: block;
-  width:40%;
-  border: 5px outset red;
+  width:80%;
+
 }
 
 .about-text{
-  border: 5px outset red;
-  display: block;
-  width:30%;
   position: absolute;
-  left:560px;
-  bottom: 250px;
+  display: block;
+  width:40%;
+  font-size: 20px;
+  top: 200px;
+  left: 40px;
 }
 
 .about-button {
@@ -71,8 +122,40 @@ h2 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-
-  margin: 0 auto;
-  width:55%;
+  width:40%;
   font-size: 22px;
+}
+
+.products-container{
+}
+
+
+.products-text{
+  display: block;
+  width:40%;
+  font-size: 20px;
+  margin: auto;
+}
+
+.products-button {
+  background-color: #1481d0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width:40%;
+  font-size: 22px;
+}
+
+
+.float-child {
+    text-align: center;
+    width: 15%;
+    float: left;
+    padding: 25px;
+    margin-left: 150px;
+    border: 1px solid rgba(19, 19, 19, 0.18);
+    background-color: rgba(175, 175, 175, 0.61);
 }
