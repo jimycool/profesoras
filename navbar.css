@@ -166,3 +166,17 @@ h2 {
     border: 1px solid rgba(19, 19, 19, 0.18);
     background-color: rgba(173,216,230,0.6);
 }
+
+.elementary {
+ #   width: 212px;
+	#height: 47px;
+	#border-bottom: 1px solid black;
+	#position: absolute;
+}
+
+
+
+
+
+
+
