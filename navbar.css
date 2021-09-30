@@ -85,8 +85,8 @@ head{
 }
 
 .topnav a:active {
-  background-color: grey;
-  color: white;
+  background-color: #add8e6;
+  color: black;
 }
 
 .current-page{
