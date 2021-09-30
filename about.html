@@ -16,10 +16,10 @@
 			</a>
 		<ul id="topnav" class="topnav">
 		<li>
-			<a class="profesoras current-page" href="index.html">Profesoras</a>
+			<a class="profesoras" href="index.html">Profesoras</a>
 		</li>
 		<li>
-			<a class="about" href="about.html">Ποίοι είμαστε</a>
+			<a class="about current-page" href="about.html">Ποίοι είμαστε</a>
 		</li>
 		<li>
 			<a class="products" href="products.html">Προϊόντα</a>
@@ -61,42 +61,43 @@
 </head>
 -->
 <body>
-  <p>
-    <h1>Profesoras
-    <h2>E-learning
-	<h3>Μπορείτε να μας βρείτε:
-	<h4>e-mail: skopos@otenet.gr
-    <h4>Τηλέφωνο: 2310 0747409
-	<h4>Διεύθυνση: Θεσσαλονίκη, Αμπελόκηποι, Λεωφόρος 28ης Οκτωβριου 14 
-  </p>
+	<p>
+		<h1>Profesoras
+		<h2>Φροντιστήρια E-learning
+	</p>
    
 	  
-<div id="mapDiv" style="width: 800px; height: 500px"></div>
-  <script>
-    // position we will use later
-    var lat = 40.65025470158698;
-    var lon = 22.932709571116643;
-    // initialize map
-    map = L.map('mapDiv').setView([lat, lon], 18);
-    // set map tiles source
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-      maxZoom: 18,
-    }).addTo(map);
-    // add marker to the map
-    marker = L.marker([lat, lon]).addTo(map);
-    // add popup to the marker
-    marker.bindPopup("<b>Profesoras</b><br />Γραφείο Θεσσαλονίκης<br />Αμπελόκηποι,Λεωφόρος 28ης Οκτωβριου 14").openPopup();
-  </script>
-	  
-	  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6IUCmDmtY2Y" frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<div id="mapDiv" style="width: 100%; height: 500px">
+		<script>
+			// position we will use later
+			var lat = 40.65025470158698;
+			var lon = 22.932709571116643;
+			// initialize map
+			map = L.map('mapDiv').setView([lat, lon], 18);
+			// set map tiles source
+			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+			  maxZoom: 18,
+			}).addTo(map);
+			// add marker to the map
+			marker = L.marker([lat, lon]).addTo(map);
+			// add popup to the marker
+			marker.bindPopup("<b>Profesoras</b><br />Γραφείο Θεσσαλονίκης<br />Αμπελόκηποι,Λεωφόρος 28ης Οκτωβριου 14").openPopup();
+		</script>
+	</div>	  
+		  
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/6IUCmDmtY2Y" frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/S8u6ThiNc3o" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	 
-	  
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/S8u6ThiNc3o" frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		 
+	<p style="text-align:center ;   color: white;">
+		<h3 style="text-align:center ;   color: blue;">Μπορείτε να μας βρείτε:
+		<h4 style="text-align:center ;   color: blue;">e-mail: skopos@otenet.gr
+		<h4 style="text-align:center ;   color: blue;">Τηλέφωνο: 2310 0747409
+		<h4 style="text-align:center ;   color: blue;">Διεύθυνση: Θεσσαλονίκη, Αμπελόκηποι, Λεωφόρος 28ης Οκτωβριου 14 
+	</p>	  
 </body>
 
 </html>
