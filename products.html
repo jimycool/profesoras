@@ -56,36 +56,72 @@
 </head>
 -->
 
-<body>
-
-  <p>
-  <h1>Μαθήματα</h1>
-  </p>
-  <div calss="float-container">
-      <div class="float-child">
-		  <b style="font-size:30px" >Δημοτικό</b><hr />
+<body onload="showdim();">
+	
+	<p>
+	<h1>Μαθήματα</h1>
+	</p>
+	<script>
+	function showdim() {
+	var dim = document.getElementById("dimotiko");
+	var gym = document.getElementById("gymnasio");
+	var lyk = document.getElementById("lykeio");
+	dim.style.display = "block";
+	gym.style.display = "none";
+	lyk.style.display = "none";
+	} 
+	function showgym() {
+	var dim = document.getElementById("dimotiko");
+	var gym = document.getElementById("gymnasio");
+	var lyk = document.getElementById("lykeio");
+	dim.style.display = "none";
+	gym.style.display = "block";
+	lyk.style.display = "none";
+	} 
+	function showlyk() {
+	var dim = document.getElementById("dimotiko");
+	var gym = document.getElementById("gymnasio");
+	var lyk = document.getElementById("lykeio");
+	dim.style.display = "none";
+	gym.style.display = "none";
+	lyk.style.display = "block";
+	} 
+	</script>
+	
+	<button class="school" onclick="showdim()">Δημοτικό</button>
+	<button class="school" onclick="showgym()">Γυμνάσιο</button>
+	<button class="school" onclick="showlyk()">Λύκειο</button><hr />
+  <div >
+      <div calss="float-container" id="dimotiko">
+		  <b style="font-size:30px ; text-align: center ; justify-content:center" >Δημοτικό</b><hr />
       <div>
-        <div>
-			<b style="font-size:25px" >Β'</b><hr />
+        <div  class="float-child">
+			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/profesoras-logo-removebg-preview.png?raw=true">
+			<b style="font-size:25px">Β'</b><hr />
 		    <div>
 			<ul>
 				<li>ΝΕΟΕΛΛΗΝΙΚΗ ΓΛΩΣΣΑ<br>
 				<li>ΜΑΘΗΜΑΤΙΚΑ <br>
+				<br>
+				<br>
 			</ul>
 			</div>
         </div>
-        <div>
-          <b style="font-size:25px">Γ'</b><hr />
+        <div class="float-child">
+			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/profesoras-logo-removebg-preview.png?raw=true">
+          <b style="font-size:25px" >Γ'</b><hr />
 		    <div>
 			<ul>
 				<li>ΝΕΟΕΛΛΗΝΙΚΗ ΓΛΩΣΣΑ<br>
 				<li>ΜΑΘΗΜΑΤΙΚΑ <br>
 				<li>ΜΕΛΕΤΗ ΠΕΡΙΒΑΛΛΟΝΤΟΣ<br>
+				<br>
 			</ul>
 			</div>
         </div>
-        <div>
-          <b style="font-size:25px">Δ'</b><hr />
+        <div class="float-child">
+			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/profesoras-logo-removebg-preview.png?raw=true">
+          <b style="font-size:25px" >Δ'</b><hr />
 		    <div>
 			<ul>
 				<li>ΝΕΟΕΛΛΗΝΙΚΗ ΓΛΩΣΣΑ <br>
@@ -95,8 +131,8 @@
 			</ul>
 			</div>
         </div>
-		<div>
-          <b style="font-size:25px">Ε'</b><hr />
+		<div class="float-child">
+          <b style="font-size:25px" >Ε'</b><hr />
 		    <div>
 			<ul>
 				<li>ΝΕΟΕΛΛΗΝΙΚΗ ΓΛΩΣΣΑ <br>
@@ -106,8 +142,8 @@
 			</ul>
 			</div>
         </div>
-		<div>
-          <b style="font-size:25px">ΣΤ'</b><hr />
+		<div class="float-child">
+          <b style="font-size:25px" >ΣΤ'</b><hr />
 		    <div>
 			<ul>
 				<li>ΝΕΟΕΛΛΗΝΙΚΗ ΓΛΩΣΣΑ <br>
@@ -120,10 +156,10 @@
       </div>
     </div>
     
-    <div class="float-child">
-        <b style="font-size:30px">Γυμνάσιο</b><hr />
+    <div  id="gymnasio">
+        <b style="font-size:30px" >Γυμνάσιο</b><hr />
       <div>
-        <div>
+        <div class="float-child">
 			<b style="font-size:25px">Α'</b><hr />
 		    <div>
 			<ul>
@@ -140,7 +176,7 @@
 			</ul>
 			</div>
         </div>
-        <div>
+        <div class="float-child">
           <b style="font-size:25px">B'</b><hr />
 		    <div>
 			<ul>
@@ -156,7 +192,7 @@
 			</ul>
 			</div>
         </div>
-        <div>
+        <div class="float-child">
           <b style="font-size:25px">Γ'</b><hr />
 		    <div>
 			<ul>
@@ -176,10 +212,10 @@
       </div>
     </div>
 	
-	<div class="float-child">
-        <b style="font-size:30px">Λύκειο</b><hr />
+	<div  id="lykeio">
+        <b style="font-size:30px" >Λύκειο</b><hr />
       <div>
-        <div>
+        <div class="float-child">
 			<b style="font-size:25px">Α'</b><hr />
 		    <div>
 			<ul>
@@ -193,7 +229,7 @@
 			</ul>
 			</div>
         </div>
-        <div>
+        <div class="float-child">
           <b style="font-size:25px">B'</b><hr />
 		    <div>
 			<ul>
@@ -205,7 +241,7 @@
 			</ul>
 			</div>
         </div>
-        <div>
+        <div class="float-child">
           <b style="font-size:25px">Γ'</b><hr />
 		    <div>
 			<ul>
@@ -220,7 +256,7 @@
 	
   </div>
   
-<iframe class="game" frameborder="0" src="https://itch.io/embed-upload/3386269?color=333333"  width="1024" height="600"><a href="https://jimycool.itch.io/profesoras">Play Profesoras on itch.io</a></iframe>
+<!-- <iframe class="game" frameborder="0" src="https://itch.io/embed-upload/3386269?color=333333"  width="1024" height="600"><a href="https://jimycool.itch.io/profesoras">Play Profesoras on itch.io</a></iframe> -->
 
 </body>
 
