@@ -19,7 +19,7 @@
 			<a class="about" href="about.html">Ποίοι είμαστε</a>
 		</li>
 		<li>
-			<a class="products current-page" href="products.html">Προϊόντα</a>
+			<a class="products current-page" href="mathimata.html">Μαθήματα</a>
 		</li>
 		</ul>
 		<!-- <div class="search-container"> -->
@@ -56,10 +56,10 @@
 </head>
 -->
 
-<body onload="showdim(); showstdim();">
+<body onload="showdim();">
 	
 	<p>
-	<h1>Μαθήματα</h1>
+	<!-- <h1>Μαθήματα</h1> -->
 	</p>
 	<script>
 	function showdim() {
@@ -77,6 +77,18 @@
 	lykbuttons.style.display = "none";
 
 	} 
+	function showalldim() {
+	var b = document.getElementById("b-dim");
+	var g = document.getElementById("g-dim");
+	var d = document.getElementById("d-dim");
+	var e = document.getElementById("e-dim");
+	var st = document.getElementById("st-dim");
+	b.style.display = "block";
+	g.style.display = "block";
+	d.style.display = "block";
+	e.style.display = "block";
+	st.style.display = "block";
+	}
 	function showbdim() {
 	var b = document.getElementById("b-dim");
 	var g = document.getElementById("g-dim");
@@ -137,6 +149,14 @@
 	e.style.display = "none";
 	st.style.display = "block";
 	} 
+	function showallgym() {
+	var a = document.getElementById("a-gym");
+	var b = document.getElementById("b-gym");
+	var g = document.getElementById("g-gym");
+	a.style.display = "block";
+	b.style.display = "block";
+	g.style.display = "block";
+	}
 	function showagym() {
 	var a = document.getElementById("a-gym");
 	var b = document.getElementById("b-gym");
@@ -159,6 +179,14 @@
 	var g = document.getElementById("g-gym");
 	a.style.display = "none";
 	b.style.display = "none";
+	g.style.display = "block";
+	}
+	function showalllyk() {
+	var a = document.getElementById("a-lyk");
+	var b = document.getElementById("b-lyk");
+	var g = document.getElementById("g-lyk");
+	a.style.display = "block";
+	b.style.display = "block";
 	g.style.display = "block";
 	}
 	function showalyk() {
@@ -219,230 +247,234 @@
 	
 	<button class="school" onclick="showdim()">Δημοτικό</button>
 	<button class="school" onclick="showgym()">Γυμνάσιο</button>
-	<button class="school" onclick="showlyk()">Λύκειο</button><hr />
+	<button class="school" onclick="showlyk()">Λύκειο</button><p class="thin-line" ></p>
 	<div id="dim-buttons">
+		<button class="school" onclick="showalldim()">Όλα</button>
 		<button class="school" onclick="showbdim()">Β' Δημοτικού</button>
 		<button class="school" onclick="showgdim()">Γ' Δημοτικού</button>
 		<button class="school" onclick="showddim()">Δ' Δημοτικού</button>
 		<button class="school" onclick="showedim()">Ε' Δημοτικού</button>
-		<button class="school" onclick="showstdim()">ΣΤ' Δημοτικού</button><hr />
+		<button class="school" onclick="showstdim()">ΣΤ' Δημοτικού</button>
 	</div>
 	<div id="gym-buttons">
+		<button class="school" onclick="showallgym()">Όλα</button>
 		<button class="school" onclick="showagym()">Α' Γυμνασίου</button>
 		<button class="school" onclick="showbgym()">Β' Γυμνασίου</button>
 		<button class="school" onclick="showggym()">Γ' Γυμνασίου</button>
 	</div>
 	<div id="lyk-buttons">
+		<button class="school" onclick="showalllyk()">Όλα</button>
 		<button class="school" onclick="showalyk()">Α' Λυκείου</button>
 		<button class="school" onclick="showblyk()">Β' Λυκείου</button>
 		<button class="school" onclick="showglyk()">Γ' Λυκείου</button>
 	</div>
 	<div>
 	<div class="float-container" id="dimotiko">
-		<b style="font-size:30px ; text-align: center ; justify-content:center" >Δημοτικό</b><hr />
+		<!-- <b style="font-size:30px ; text-align: center ; justify-content:center" >Δημοτικό</b><hr /> -->
 		<div id="b-dim">
 			<div  class="float-child">
+				<a href="b-dimotikoy-glossa.html">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/b-dim-glossa.jpg?raw=true">
-				<b style="font-size:25px">Β' Δημοτικού Νεοελληνική Γλώσσα</b>
-				
+				<button  style="font-size:20px;text-decoration:none;underline:none;border:none">Β' Δημοτικού Νεοελληνική Γλώσσα</button>
+				</a>
 			</div>
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/b-dim-mathimatika.PNG?raw=true">
-				<b style="font-size:25px">Β' Δημοτικού Μαθηματικά</b> </br> 
+				<b style="font-size:20px">Β' Δημοτικού Μαθηματικά</b> </br> 
 			</div>
 		</div>
 		
 		<div id="g-dim">
 			<div class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/g-dim-glossa.jpg?raw=true">
-				<b style="font-size:25px" >Γ' Δημοτικού Νεοελληνική Γλώσσα</b>
+				<b style="font-size:20px" >Γ' Δημοτικού Νεοελληνική Γλώσσα</b>
 			</div>
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/g-dim-mathimatika.jpg?raw=true">
-				<b style="font-size:25px">Γ' Δημοτικού Μαθηματικά</b>
+				<b style="font-size:20px">Γ' Δημοτικού Μαθηματικά</b>
 				
 			</div>
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/g-dim-meleti.jpg?raw=true">
-				<b style="font-size:25px">Γ' Δημοτικού Μελέτη Περιβάλλοντος</b> 
+				<b style="font-size:20px">Γ' Δημοτικού Μελέτη Περιβάλλοντος</b> 
 			</div>
 		</div>
 		
 		<div id="d-dim">
 			<div class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/d-dim-glossa.jpg?raw=true">
-				<b style="font-size:25px" >Δ' Δημοτικού Νεοελληνική Γλώσσα</b>
+				<b style="font-size:20px" >Δ' Δημοτικού Νεοελληνική Γλώσσα</b>
 			</div>
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/d-dim-mathimatika.jpg?raw=true">
-				<b style="font-size:25px">Δ' Δημοτικού Μαθηματικά</b>   
+				<b style="font-size:20px">Δ' Δημοτικού Μαθηματικά</b>   
 			</div>
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/d-dim-istoria.jpg?raw=true">
-				<b style="font-size:25px">Δ' Δημοτικού Ιστορία</b>  
+				<b style="font-size:20px">Δ' Δημοτικού Ιστορία</b>  
 			</div>
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/d-dim-meleti.jpg?raw=true">
-				<b style="font-size:25px">Δ' Δημοτικού Μελέτη Περιβάλλοντος</b>
+				<b style="font-size:20px">Δ' Δημοτικού Μελέτη Περιβάλλοντος</b>
 			</div>
 		</div>
 		<div id="e-dim">
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/e-dim-glossa.jpg?raw=true">
-				<b style="font-size:25px">Ε' Δημοτικού Νεοελληνική Γλώσσα</b>  
+				<b style="font-size:20px">Ε' Δημοτικού Νεοελληνική Γλώσσα</b>  
 			</div>
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/e-dim-istoria.jpg?raw=true">
-				<b style="font-size:25px">Ε' Δημοτικού Ιστορία</b>  
+				<b style="font-size:20px">Ε' Δημοτικού Ιστορία</b>  
 			</div>
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/e-dim-fysiki.jpg?raw=true">
-				<b style="font-size:25px">Ε' Δημοτικού Ερευνώ και ανακαλύπτω</b>  
+				<b style="font-size:20px">Ε' Δημοτικού Ερευνώ και ανακαλύπτω</b>  
 			</div>
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/e-dim-mathimatika.jpg?raw=true">
-				<b style="font-size:25px">Ε' Δημοτικού Μαθηματικά</b>  
+				<b style="font-size:20px">Ε' Δημοτικού Μαθηματικά</b>  
 			</div>
 		</div>
 		<div id="st-dim">
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/st-dim-glossa.jpg?raw=true">
-				<b style="font-size:25px">ΣΤ' Δημοτικού Νεοελληνική Γλώσσα</b>  
+				<b style="font-size:20px">ΣΤ' Δημοτικού Νεοελληνική Γλώσσα</b>  
 			</div>
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/st-dim-mathimatika.jpg?raw=true">
-				<b style="font-size:25px">ΣΤ' Δημοτικού Μαθηματικά</b>  
+				<b style="font-size:20px">ΣΤ' Δημοτικού Μαθηματικά</b>  
 			</div>
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/st-dim-istoria.jpg?raw=true">
-				<b style="font-size:25px">ΣΤ' Δημοτικού Ιστορία</b>  
+				<b style="font-size:20px">ΣΤ' Δημοτικού Ιστορία</b>  
 			</div>
 			<div  class="float-child">
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/dimotiko/st-dim-fysiki.jpg?raw=true">
-				<b style="font-size:25px">ΣΤ' Δημοτικού Ερευνώ και ανακαλύπτω</b>  
+				<b style="font-size:20px">ΣΤ' Δημοτικού Ερευνώ και ανακαλύπτω</b>  
 			</div>
 		</div>
       </div>
     </div>
     
     <div class="float-container" id="gymnasio">
-        <b style="font-size:30px" >Γυμνάσιο</b><hr />
+        <!-- <b style="font-size:30px" >Γυμνάσιο</b><hr /> -->
       <div>
 	  	<div id="a-gym">
         <div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/a-gym-glossa.jpg?raw=true">
-			<b style="font-size:25px">Α' Γυμνασίου Νεοελληνική Γλώσσα</b>
+			<b style="font-size:20px">Α' Γυμνασίου Νεοελληνική Γλώσσα</b>
 		</div>
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/a-gym-istoria.jpg?raw=true">
-			<b style="font-size:25px">Α' Γυμνασίου Ιστορία</b>                                                         
+			<b style="font-size:20px">Α' Γυμνασίου Ιστορία</b>                                                         
 		</div>                                                                                                         
 		<div class="float-child" >                                                                                     
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/a-gym-mathimatika.jpg?raw=true">
-			<b style="font-size:25px">Α' Γυμνασίου Μαθηματικά</b>                                                      
+			<b style="font-size:20px">Α' Γυμνασίου Μαθηματικά</b>                                                      
 		</div>                                                                                                         
 		<div class="float-child" >                                                                                     
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/a-gym-keimena.PNG?raw=true">
-			<b style="font-size:25px">Α' Γυμνασίου Νεοελληνικά Κείμενα</b>                                            
+			<b style="font-size:20px">Α' Γυμνασίου Νεοελληνικά Κείμενα</b>                                            
 		</div><div class="float-child" >                                                                              
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/a-gym-arxaia.jpg?raw=true">
-			<b style="font-size:25px">Α' Γυμνασίου Αρχαία Ελληνική γλώσσα</b>                                         
+			<b style="font-size:20px">Α' Γυμνασίου Αρχαία Ελληνική γλώσσα</b>                                         
 		</div>                                                                                                        
 		<div class="float-child" >                                                                                    
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/a-gym-irodotos.PNG?raw=true">
-			<b style="font-size:25px">Α' Γυμνασίου Ηρόδοτος</b>                                                        
+			<b style="font-size:20px">Α' Γυμνασίου Ηρόδοτος</b>                                                        
 		</div>                                                                                                         
 		<div class="float-child" >                                                                                     
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/a-gym-odysia.jpg?raw=true">
-			<b style="font-size:25px">Α' Γυμνασίου Ομηρικά Έπη - Οδύσσεια</b>                                          
+			<b style="font-size:20px">Α' Γυμνασίου Ομηρικά Έπη - Οδύσσεια</b>                                          
 		</div>                                                                                                         
 		<div class="float-child" >                                                                                     
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/a-gym-biologia.jpg?raw=true">
-			<b style="font-size:25px">Α' Γυμνασίου Βιολογία</b>                                                       
+			<b style="font-size:20px">Α' Γυμνασίου Βιολογία</b>                                                       
 		</div><div class="float-child" >                                                                              
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/a-gym-geografia.jpg?raw=true">
-			<b style="font-size:25px">Α' Γυμνασίου Γεωγραφία</b>                                                      
+			<b style="font-size:20px">Α' Γυμνασίου Γεωγραφία</b>                                                      
 		</div>                                                                                                        
 		<div class="float-child" >                                                                                    
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/a-gym-agglika.jpg?raw=true">
-			<b style="font-size:25px">Α' Γυμνασίου Αγγλικά</b>                                                        
+			<b style="font-size:20px">Α' Γυμνασίου Αγγλικά</b>                                                        
 		</div>                                                                                                
 		</div>
        
 		<div id="b-gym">
 			<div class="float-child" >
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/b-gym-istoria.jpg?raw=true">
-				<b style="font-size:25px">Β' Γυμνασίου Ιστορία</b>                                               
+				<b style="font-size:20px">Β' Γυμνασίου Ιστορία</b>                                               
 			</div>                                                                                               
 			<div class="float-child" >                                                                           
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/b-gym-glossa.jpg?raw=true">
-				<b style="font-size:25px">Β' Γυμνασίου Νεοελληνική Γλώσσα</b>                                    
+				<b style="font-size:20px">Β' Γυμνασίου Νεοελληνική Γλώσσα</b>                                    
 			</div>                                                                                               
 			<div class="float-child" >                                                                           
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/b-gym-mathimatika.jpg?raw=true">
-				<b style="font-size:25px">Β' Γυμνασίου Μαθηματικά</b>                                             
+				<b style="font-size:20px">Β' Γυμνασίου Μαθηματικά</b>                                             
 			</div>                                                                                                
 			<div class="float-child" >                                                                            
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/b-gym-keimena.jpg?raw=true">
-				<b style="font-size:25px">Β' Γυμνασίου Νεοελληνικά Κείμενα</b>                                    
+				<b style="font-size:20px">Β' Γυμνασίου Νεοελληνικά Κείμενα</b>                                    
 			</div>                                                                                                
 			<div class="float-child" >                                                                            
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/b-gym-arxaia.jpg?raw=true">
-				<b style="font-size:25px">Β' Γυμνασίου Αρχαία Ελληνική Γλώσσα</b>                                 
+				<b style="font-size:20px">Β' Γυμνασίου Αρχαία Ελληνική Γλώσσα</b>                                 
 			</div>                                                                                                
 			<div class="float-child" >                                                                            
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/b-gym-iliada.jpg?raw=true">
-				<b style="font-size:25px">Β' Γυμνασίου Ομηρικά Έπη - Ιλιάδα</b>                                   
+				<b style="font-size:20px">Β' Γυμνασίου Ομηρικά Έπη - Ιλιάδα</b>                                   
 			</div>                                                                                                
 			<div class="float-child" >                                                                            
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/b-gym-fysiki.jpg?raw=true">
-				<b style="font-size:25px">Β' Γυμνασίου Φυσική</b>                                                 
+				<b style="font-size:20px">Β' Γυμνασίου Φυσική</b>                                                 
 			</div>                                                                                                
 			<div class="float-child" >                                                                            
 				<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/b-gym-xhmeia.jpg?raw=true">
-				<b style="font-size:25px">Β' Γυμνασίου Χημεία</b>                                                 
+				<b style="font-size:20px">Β' Γυμνασίου Χημεία</b>                                                 
 			</div>                                                                                                
         </div>
 		<div id="g-gym">
         <div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/g-gym-glossa.jpg?raw=true">
-			<b style="font-size:25px">Γ' Γυμνασίου Νεοελληνική Γλώσσα</b>                                    
+			<b style="font-size:20px">Γ' Γυμνασίου Νεοελληνική Γλώσσα</b>                                    
 		</div>                                                                                               
 		<div class="float-child" >                                                                           
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/g-gym-mathimatika.jpg?raw=true">
-			<b style="font-size:25px">Γ' Γυμνασίου Μαθηματικά</b>                                             
+			<b style="font-size:20px">Γ' Γυμνασίου Μαθηματικά</b>                                             
 		</div>                                                                                                
 		<div class="float-child" >                                                                            
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/g-gym-keimena.PNG?raw=true">
-			<b style="font-size:25px">Γ' Γυμνασίου Νεοελληνικά Κείμενα</b>                                    
+			<b style="font-size:20px">Γ' Γυμνασίου Νεοελληνικά Κείμενα</b>                                    
 		</div>                                                                                                
 		<div class="float-child" >                                                                            
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/g-gym-istoria.jpg?raw=true">
-			<b style="font-size:25px">Γ' Γυμνασίου Ιστορία</b>                                               
+			<b style="font-size:20px">Γ' Γυμνασίου Ιστορία</b>                                               
 		</div>                                                                                               
 		<div class="float-child" >                                                                           
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/g-gym-arxaia.jpg?raw=true">
-			<b style="font-size:25px">Γ' Γυμνασίου Αρχαία Ελληνική Γλώσσα</b>                                
+			<b style="font-size:20px">Γ' Γυμνασίου Αρχαία Ελληνική Γλώσσα</b>                                
 		</div>                                                                                               
 		<div class="float-child" >                                                                           
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/g-gym-eleni.PNG?raw=true">
-			<b style="font-size:25px">Γ' Γυμνασίου Ευριπίδη Ελένη</b>                                         
+			<b style="font-size:20px">Γ' Γυμνασίου Ευριπίδη Ελένη</b>                                         
 		</div>                                                                                                
 		<div class="float-child" >                                                                            
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/g-gym-arrianoy.jpg?raw=true">
-			<b style="font-size:25px">Γ' Γυμνασίου Αριανού Ανάβαση</b>                                       
+			<b style="font-size:20px">Γ' Γυμνασίου Αριανού Ανάβαση</b>                                       
 		</div>                                                                                               
 		<div class="float-child" >                                                                           
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/g-gym-fysiki.jpg?raw=true">
-			<b style="font-size:25px">Γ' Γυμνασίου Φυσική</b>                                                
+			<b style="font-size:20px">Γ' Γυμνασίου Φυσική</b>                                                
 		</div>                                                                                               
 		<div class="float-child" >                                                                           
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/g-gym-xhmeia.jpg?raw=true">
-			<b style="font-size:25px">Γ' Γυμνασίου Χημεία</b>                                                 
+			<b style="font-size:20px">Γ' Γυμνασίου Χημεία</b>                                                 
 		</div>                                                                                                
 		<div class="float-child" >                                                                            
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/gymnasio/g-gym-biologia.jpg?raw=true">
-			<b style="font-size:25px">Γ' Γυμνασίου Βιολογία</b>
+			<b style="font-size:20px">Γ' Γυμνασίου Βιολογία</b>
 		</div>
         </div>
       </div>
@@ -450,84 +482,84 @@
     </div>
 	
 	<div class="float-container" id="lykeio">
-        <b style="font-size:30px" >Λύκειο</b><hr />
+        <!-- <b style="font-size:30px" >Λύκειο</b><hr /> -->
       <div>
 	  	<div id="a-lyk">
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/a-lyk-istoria.jpg?raw=true">
-			<b style="font-size:25px">Α' Λυκείου Ιστορία</b>
+			<b style="font-size:20px">Α' Λυκείου Ιστορία</b>
 		</div>
 		<div class="float-child" >
-			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/a-lyk-glossa.PNG?raw=true">
-			<b style="font-size:25px">Α' Λυκείου Νεοελληνική Γλώσσα</b>
+			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/a-lyk-glossa.png?raw=true">
+			<b style="font-size:20px">Α' Λυκείου Νεοελληνική Γλώσσα</b>
 		</div>
 		<div class="float-child" >
-			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/a-lyk-keimena.PNG?raw=true">
-			<b style="font-size:25px">Α' Λυκείου Νεοελληνικά Κείμενα</b>
+			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/a-lyk-keimena.png?raw=true">
+			<b style="font-size:20px">Α' Λυκείου Νεοελληνικά Κείμενα</b>
 		</div>
 		<!-- <div class="float-child" > -->
 			<!-- <img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/a-lyk-arxaia.PNG?raw=true"> -->
-			<!-- <b style="font-size:25px">Α' Λυκείου Αρχαία Ελληνική Γλώσσα</b> -->
+			<!-- <b style="font-size:20px">Α' Λυκείου Αρχαία Ελληνική Γλώσσα</b> -->
 		<!-- </div> -->
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/a-lyk-fysiki.jpg?raw=true">
-			<b style="font-size:25px">Α' Λυκείου Φυσική</b>
+			<b style="font-size:20px">Α' Λυκείου Φυσική</b>
 		</div>
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/a-lyk-xhmeia.jpg?raw=true">
-			<b style="font-size:25px">Α' Λυκείου Χημεία</b>
+			<b style="font-size:20px">Α' Λυκείου Χημεία</b>
 		</div>
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/a-lyk-algebra.jpg?raw=true">
-			<b style="font-size:25px">Α' Λυκείου Άλγεβρα</b>
+			<b style="font-size:20px">Α' Λυκείου Άλγεβρα</b>
 		</div>
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/a-lyk-geometria.jpg?raw=true">
-			<b style="font-size:25px">Α' Λυκείου Γεωμετρία</b>
+			<b style="font-size:20px">Α' Λυκείου Γεωμετρία</b>
 		</div>
 		</div>
 		<div id="b-lyk">
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/b-lyk-glossa.jpg?raw=true">
-			<b style="font-size:25px">Β' Λυκείου Νεοελληνική Γλώσσα</b>
+			<b style="font-size:20px">Β' Λυκείου Νεοελληνική Γλώσσα</b>
 		</div>
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/b-lyk-sofoklis.jpg?raw=true">
-			<b style="font-size:25px">Β' Λυκείου Σοφοκλής</b>
+			<b style="font-size:20px">Β' Λυκείου Σοφοκλής</b>
 		</div>
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/b-lyk-fysiki-genikis.jpg?raw=true">
-			<b style="font-size:25px">Β' Λυκείου Φυσική Γενικής</b>
+			<b style="font-size:20px">Β' Λυκείου Φυσική Γενικής</b>
 		</div>
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/b-lyk-fysiki-kat.jpg?raw=true">
-			<b style="font-size:25px">Β' Λυκείου Φυσική Κατεύθυνσης</b>
+			<b style="font-size:20px">Β' Λυκείου Φυσική Κατεύθυνσης</b>
 		</div>
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/b-lyk-xhmeia.jpg?raw=true">
-			<b style="font-size:25px">Β' Λυκείου Χημεία</b>
+			<b style="font-size:20px">Β' Λυκείου Χημεία</b>
 		</div>
 			<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/b-lyk-algebra.jpg?raw=true">
-			<b style="font-size:25px">Β' Λυκείου Άλγεβρα</b>
+			<b style="font-size:20px">Β' Λυκείου Άλγεβρα</b>
 		</div>
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/b-lyk-geometria.jpg?raw=true">
-			<b style="font-size:25px">Β' Λυκείου Γεωμετρία</b>
+			<b style="font-size:20px">Β' Λυκείου Γεωμετρία</b>
 		</div>
 		</div>
 		<div id="g-lyk">
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/g-lyk-glossa.jpg?raw=true">
-			<b style="font-size:25px">Γ' Λυκείου Νεοελληνική Γλώσσα</b>
+			<b style="font-size:20px">Γ' Λυκείου Νεοελληνική Γλώσσα</b>
 		</div>
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/g-lyk-fysiki-kat.jpg?raw=true">
-			<b style="font-size:25px">Γ' Λυκείου Φυσική Κατεύθυνσης</b>
+			<b style="font-size:20px">Γ' Λυκείου Φυσική Κατεύθυνσης</b>
 		</div>
 		<div class="float-child" >
 			<img class="logo-img" width="100%" src="https://github.com/jimycool/profesoras/blob/master/images/lykeio/g-lyk-mathimatika.jpg?raw=true">
-			<b style="font-size:25px">Γ' Λυκείου Μαθηματικά</b>
+			<b style="font-size:20px">Γ' Λυκείου Μαθηματικά</b>
 		</div>
 		</div>
       </div>

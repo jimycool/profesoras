@@ -96,7 +96,11 @@ head{
 	border-color:black;
 
 }
-
+.thin-line{
+	width:100%;
+  height:1px;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
 .topnav .search-container {
   float: right;
 }
@@ -234,7 +238,7 @@ h2 {
     margin-bottom: 50px;
     margin-top: 30px;
     border: 1px solid rgba(19, 19, 19, 0.18);
-    background-color: rgba(173,216,230,0.6);
+    background-color: rgba(50,50,50,0.1); 
 }
 
 .elementary {
@@ -304,16 +308,71 @@ h2 {
 	text-align: center;
 } 
 
+.mathima-eikona{
+	width:25%;
+	margin-left:100px;
+	margin-top:40px;
+	margin-bottom:60px;	
+	margin-right:260px;	
+}
+.mathima-video{
+	width:35%;
+	height:315px;
+	margin-left:50px;
+	margin-top:0px;
+	margin-bottom:260px;	
+	margin-right:50px;	
+}
+
 .school {
-    background-color: rgba(173,216,230,0.6);
-    border-color: rgba(19, 19, 19, 0.18);
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
 }
+
+.school:visited,
+.school:focus, 
 .school:hover {
-	    background-color: rgba(173,216,230,0.2);
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(173,216,230,0.6);
 }
-.school:focus {
-	    background-color: rgba(13,16,30,0.2);
+
+.school:hover {
+  transform: translateY(-1px);
 }
+
+.school:active {
+  background-color: rgba(173,216,230,0.2);
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+    
 
 
 @media screen and (max-width: 600px) {
