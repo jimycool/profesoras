@@ -97,7 +97,7 @@ head{
 
 }
 .thin-line{
-	width:100%;
+	max-width:100%;
   height:1px;
   border-bottom: 1px solid rgba(0,0,0,.15);
 }
@@ -334,6 +334,9 @@ h2 {
 	
 }
 
+.school-buttons{
+	/* margin-left:50px; */
+}
 .school {
   align-items: center;
   background-color: #FFFFFF;
